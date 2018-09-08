@@ -1,10 +1,11 @@
-sonar_project=sonar-scanner-cli-3.2.0.1227-linux
-sonar_download_url=https://sonarsource.bintray.com/Distribution/sonar-scanner-cli/$sonar_project.zip
+sonar_version-3.2.0.1227-linux
+sonar_project_dir=sonar-scanner-$sonar_version
+sonar_download_url=https://sonarsource.bintray.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-$sonar_version.zip
 
-curl $sonar_download_url -L --output $sonar_project.zip
-unzip $sonar_project.zip
+curl $sonar_download_url -L --output sonar.zip
+unzip sonar.zip
 
-PATH=$PATH:`pwd`/$sonar_project/bin
+PATH=$PATH:`pwd`/$sonar_project_dir/bin
 
 sonar-scanner \
   -Dsonar.projectKey=mattpjohnson_node-typescript-boilerplate \
