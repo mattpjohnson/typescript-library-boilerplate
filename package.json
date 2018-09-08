@@ -11,7 +11,7 @@
     "build": "tsc",
     "lint": "tslint --project . 'src/**/*.ts'",
     "start": "ts-node src/index.ts",
-    "test": "jest --watch"
+    "test": "jest"
   },
   "jest": {
     "moduleFileExtensions": [
