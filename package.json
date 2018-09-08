@@ -11,7 +11,8 @@
     "build": "tsc",
     "lint": "tslint --project . 'src/**/*.ts'",
     "start": "ts-node src/index.ts",
-    "test": "jest"
+    "test": "jest",
+    "test:coverage": "jest --coverage"
   },
   "jest": {
     "moduleFileExtensions": [
