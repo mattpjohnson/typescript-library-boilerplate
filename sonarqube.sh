@@ -4,7 +4,7 @@ sonar_download_url=https://sonarsource.bintray.com/Distribution/sonar-scanner-cl
 curl $sonar_download_url -L --output $sonar_project.zip
 unzip $sonar_project.zip
 
-PATH=$PATH:`pwd`/$sonar_project
+PATH=$PATH:`pwd`/$sonar_project/bin
 
 sonar-scanner \
   -Dsonar.projectKey=mattpjohnson_node-typescript-boilerplate \
