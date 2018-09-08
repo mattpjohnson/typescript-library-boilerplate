@@ -1,8 +1,19 @@
 # node-typescript-boilerplate
 
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
-[![CircleCI](https://circleci.com/gh/mattpjohnson/node-typescript-boilerplate.svg?style=svg)](https://circleci.com/gh/mattpjohnson/node-typescript-boilerplate)
-[![codecov](https://codecov.io/gh/mattpjohnson/node-typescript-boilerplate/branch/master/graph/badge.svg)](https://codecov.io/gh/mattpjohnson/node-typescript-boilerplate)
+<p align="center">
+  <a href="https://travis-ci.org/prettier/prettier">
+    <img alt="Travis CI Build Status" src="https://img.shields.io/travis/mattpjohnson/node-typescript-boilerplate/master.svg?style=flat-square&label=Travis+CI">
+  </a>
+  <a href="https://circleci.com/gh/mattpjohnson/node-typescript-boilerplate">
+    <img alt="CircleCI Build Status" src="https://img.shields.io/circleci/project/github/mattpjohnson/node-typescript-boilerplate/master.svg?style=flat-square&label=CircleCI">
+  </a>
+  <a href="https://codecov.io/gh/mattpjohnson/node-typescript-boilerplate">
+    <img alt="Codecov Coverage Status" src="https://img.shields.io/codecov/c/github/mattpjohnson/node-typescript-boilerplate.svg?style=flat-square">
+  </a>
+  <a href="https://www.npmjs.com/package/prettier">
+    <img alt="npm version" src="https://img.shields.io/npm/v/prettier.svg?style=flat-square">
+  </a>
+</p>
 
 A boilerplate with some sane defaults for building Node projects with TypeScript.
 
