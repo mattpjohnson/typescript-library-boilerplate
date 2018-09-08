@@ -1,4 +1,4 @@
-# node-typescript-boilerplate
+<h1 align="center">node-typescript-boilerplate</h1>
 
 <p align="center">
   <a href="https://travis-ci.org/prettier/prettier">
@@ -10,8 +10,8 @@
   <a href="https://codecov.io/gh/mattpjohnson/node-typescript-boilerplate">
     <img alt="Codecov Coverage Status" src="https://img.shields.io/codecov/c/github/mattpjohnson/node-typescript-boilerplate.svg?style=flat-square">
   </a>
-  <a href="https://www.npmjs.com/package/prettier">
-    <img alt="npm version" src="https://img.shields.io/npm/v/prettier.svg?style=flat-square">
+  <a href="#badge">
+    <img alt="code style: prettier" src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square">
   </a>
 </p>
 
