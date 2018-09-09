@@ -18,8 +18,9 @@
   </a>
 </p>
 
-> A boilerplate with some sane defaults for building Node projects with TypeScript.
-> This boilerplate is primarily designed for projects that will be published on npm.
+A boilerplate with some sane defaults for building Node projects with TypeScript.
+This boilerplate is primarily designed for projects that will be published on npm.
+
 > Note: This boilerplate does not come with a REST framework, ORM, etc.
 
 # Getting Started
