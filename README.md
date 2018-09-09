@@ -18,12 +18,21 @@
   </a>
 </p>
 
-A boilerplate with some sane defaults for building Node.js projects with TypeScript.
-This boilerplate is primarily designed for projects that will be published on npm.
+A boilerplate with some sane defaults for building TypeScript libraries to be consumed by both browsers and Node.js projects.
 
-> Note: This boilerplate does not come with a REST framework, ORM, etc.
+# Table of Contents
 
-# Getting Started
+- [typescript-library-boilerplate](#typescript-library-boilerplate)
+- [Table of Contents](#table-of-contents)
+- [What's Included](#whats-included)
+- [Setting Up Your Development Environment](#setting-up-your-development-environment)
+- [Setting Up CircleCI](#setting-up-circleci)
+- [Setting Up Travis CI](#setting-up-travis-ci)
+- [Setting Up GitLab CI](#setting-up-gitlab-ci)
+- [Setting Up Codecov](#setting-up-codecov)
+- [Setting Up SonarQube](#setting-up-sonarqube)
+
+# What's Included
 
 This project includes tooling for
 
@@ -42,7 +51,7 @@ With easy integrations for
 - [Codecov](https://codecov.io/gh/) for code coverage reports
 - [SonarQube](https://www.sonarqube.org/) to ensure code quality
 
-# Setting Up Your Environment
+# Setting Up Your Development Environment
 
 It is recommended that you install the following extensions for your editor:
 
@@ -54,16 +63,49 @@ If you're using VSCode all the recommended extensions are combined in [this exte
 
 # Setting Up CircleCI
 
-Docs needed
+Login to [CircleCI](https://circleci.com/) and select "Add Projects" in the left-hand sidebar.<br>
+Scroll down until you find your project and click "Set Up Project".<br>
+For Operating System choose Linux and then click the "Start Building" button located at the bottom of the page.
+
+If you aren't using SonarQube you'll want to remove `&& ./sonarqube.sh` from the run command in .circleci/config.yml. <br>
+If you would like to use SonarQube make sure you setup SonarQube following the instructions below.
+
+If you don't setup or disable SonarQube then CircleCI will fail with the message<br>
+`You're only authorized to execute a local (preview) SonarQube analysis without pushing the results to the SonarQube server.`<br>
+`Please contact your SonarQube administrator.`
 
 # Setting Up Travis CI
 
-Docs needed
+Login to [https://travis-ci.org/](https://travis-ci.org/) and click the "+" next to "My Repositories".<br>
+Click the toggle next to your project.<br>
+And that's it! Your project will build next time you push to your repository.
 
 # Setting Up GitLab CI
 
 Docs needed
 
+# Setting Up Codecov
+
+Login to [https://codecov.io/gh](https://codecov.io/gh) and give them access to your git hosting account.<br>
+Copy your Upload Token and add it with the key `CODECOV_TOKEN` as an environment variable to the CI service of your choice.
+
+Here are some links to docs for setting up environment variables with the CI services this project supports:
+
+- [CircleCI](https://circleci.com/docs/2.0/env-vars/#setting-an-environment-variable-in-a-project) - Setting an Environment Variable in a Project
+- [Travis CI](https://docs.travis-ci.com/user/environment-variables/#defining-variables-in-repository-settings) - Defining Variables in Repository Settings
+- [GitLab CI](https://docs.gitlab.com/ee/ci/variables/#variables) - Variables
+
+Congrats! After your next CI run you will see coverage reports.
+
+> Reminder: Don't forget to update the badge in README.md to point to your project in codecov
+
 # Setting Up SonarQube
 
-Login to [https://sonarcloud.io/](https://sonarcloud.io/).
+Login to [https://sonarcloud.io/](https://sonarcloud.io/) and click "Create new project".<br>
+Select your repository and click "Create".<br>
+Enter a name for your token and click "Generate".<br>
+Copy the token that was generated and add it as an environment variable with the key `SONAR_LOGIN` to your CI project.
+
+If you're not using CircleCI then update your CI run script to call `./sonarqube.sh` after build.
+
+After your next CI run you will see code quality analysis in SonarQube.
