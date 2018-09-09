@@ -2,7 +2,7 @@
   "compilerOptions": {
     "declaration": true,
     "outDir": "dist",
-    "module": "commonjs",
+    "module": "esnext",
     "noImplicitAny": true,
     "strictNullChecks": true,
     "removeComments": true,

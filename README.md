@@ -25,7 +25,7 @@ This boilerplate is primarily designed for projects that will be published on np
 
 # Getting Started
 
-This project uses
+This project includes tooling for
 
 - [TypeScript](https://www.typescriptlang.org/) to add static typing to JavaScript
 - [Jest](https://jestjs.io/) for automated testing
@@ -40,14 +40,14 @@ With easy integrations for
 - [Codecov](https://codecov.io/gh/) for code coverage reports
 - [SonarQube](https://www.sonarqube.org/) to ensure code quality
 
-# With CircleCI
+# Setting Up CircleCI
 
 Docs needed
 
-# With Travis CI
+# Setting Up Travis CI
 
 Docs needed
 
-# With SonarQube
+# Setting Up SonarQube
 
-Setup an account on [https://sonarcloud.io/](https://sonarcloud.io/).
+Login to [https://sonarcloud.io/](https://sonarcloud.io/).
