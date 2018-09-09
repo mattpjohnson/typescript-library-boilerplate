@@ -8,7 +8,7 @@ unzip sonar.zip
 PATH=$PATH:`pwd`/$sonar_project_dir/bin
 
 sonar-scanner \
-  -Dsonar.projectKey=mattpjohnson_node-typescript-boilerplate \
+  -Dsonar.projectKey=mattpjohnson_typescript-library-boilerplate \
   -Dsonar.organization=mattpjohnson-github \
   -Dsonar.sources=. \
   -Dsonar.exclusions=node_modules/**,coverage/**,$sonar_project_dir/** \
