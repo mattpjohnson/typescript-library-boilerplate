@@ -1,4 +1,4 @@
-npx sonar-scanner \
+npx sonarqube-scanner \
   -Dsonar.projectKey=mattpjohnson_typescript-library-boilerplate \
   -Dsonar.organization=mattpjohnson-github \
   -Dsonar.sources=. \
