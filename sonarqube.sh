@@ -1,4 +1,4 @@
-sonar_version-3.2.0.1227-linux
+sonar_version=3.2.0.1227-linux
 sonar_project_dir=sonar-scanner-$sonar_version
 sonar_download_url=https://sonarsource.bintray.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-$sonar_version.zip
 
