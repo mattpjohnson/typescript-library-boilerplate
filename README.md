@@ -1,6 +1,6 @@
-<h1 align="center">node-typescript-boilerplate</h1>
+# node-typescript-boilerplate
 
-<p align="center">
+<p>
   <a href="https://travis-ci.org/mattpjohnson/node-typescript-boilerplate">
     <img alt="Travis CI Build Status" src="https://img.shields.io/travis/mattpjohnson/node-typescript-boilerplate/master.svg?style=flat-square&label=Travis+CI">
   </a>
@@ -18,8 +18,35 @@
   </a>
 </p>
 
-## About
-
-A boilerplate with some sane defaults for building Node projects with TypeScript.
-
+> A boilerplate with some sane defaults for building Node projects with TypeScript.
+> This boilerplate is primarily designed for projects that will be published on npm.
 > Note: This boilerplate does not come with a REST framework, ORM, etc.
+
+# Getting Started
+
+This project uses
+
+- [TypeScript](https://www.typescriptlang.org/) to add static typing to JavaScript
+- [Jest](https://jestjs.io/) for automated testing
+- [EditorConfig](https://editorconfig.org/) for consistent coding styles
+- [Prettier](https://prettier.io/) for code formatting
+- [TSLint](https://palantir.github.io/tslint/) for linting per prettier rules
+
+With easy integrations for
+
+- [CircleCI](https://circleci.com/) for continuous integration
+- [Travis CI](https://travis-ci.org/) for continuous integration
+- [Codecov](https://codecov.io/gh/) for code coverage reports
+- [SonarQube](https://www.sonarqube.org/) to ensure code quality
+
+# With CircleCI
+
+Docs needed
+
+# With Travis CI
+
+Docs needed
+
+# With SonarQube
+
+Setup an account on [https://sonarcloud.io/](https://sonarcloud.io/).
