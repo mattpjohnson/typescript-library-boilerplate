@@ -1,32 +1,30 @@
-# typescript-library-boilerplate
+# typescript-library-boilerplate <!-- omit in toc -->
 
 <p>
   <a href="https://travis-ci.org/mattpjohnson/typescript-library-boilerplate">
-    <img alt="Travis CI Build Status" src="https://img.shields.io/travis/mattpjohnson/typescript-library-boilerplate/master.svg?style=flat-square&label=Travis+CI">
+    <img alt="Travis CI Build Status" src="https://img.shields.io/travis/mattpjohnson/typescript-library-boilerplate/master.svg?style=flat&label=Travis+CI">
   </a>
   <a href="https://circleci.com/gh/mattpjohnson/typescript-library-boilerplate">
-    <img alt="CircleCI Build Status" src="https://img.shields.io/circleci/project/github/mattpjohnson/typescript-library-boilerplate/master.svg?style=flat-square&label=CircleCI">
+    <img alt="CircleCI Build Status" src="https://img.shields.io/circleci/project/github/mattpjohnson/typescript-library-boilerplate/master.svg?style=flat&label=CircleCI">
   </a>
   <a href="https://gitlab.com/mattpjohnson/typescript-library-boilerplate/pipelines">
-    <img alt="GitLab CI Build Status" src="https://gitlab.com/mattpjohnson/typescript-library-boilerplate/badges/master/build.svg?style=flat-square">
+    <img alt="GitLab CI Build Status" src="https://gitlab.com/mattpjohnson/typescript-library-boilerplate/badges/master/build.svg?style=flat">
   </a>
   <a href="https://codecov.io/gh/mattpjohnson/typescript-library-boilerplate">
-    <img alt="Codecov Coverage Status" src="https://img.shields.io/codecov/c/github/mattpjohnson/typescript-library-boilerplate.svg?style=flat-square">
+    <img alt="Codecov Coverage Status" src="https://img.shields.io/codecov/c/github/mattpjohnson/typescript-library-boilerplate.svg?style=flat">
   </a>
   <a href="https://sonarcloud.io/dashboard?id=mattpjohnson_typescript-library-boilerplate">
-    <img alt="SonarQube Technical Debt" src="https://img.shields.io/sonar/http/sonarcloud.io/mattpjohnson_typescript-library-boilerplate/tech_debt.svg?style=flat-square">
+    <img alt="SonarQube Technical Debt" src="https://img.shields.io/sonar/http/sonarcloud.io/mattpjohnson_typescript-library-boilerplate/tech_debt.svg?style=flat">
   </a>
   <a href="https://github.com/prettier/prettier#badge">
-    <img alt="code style: prettier" src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square">
+    <img alt="code style: prettier" src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat">
   </a>
 </p>
 
 A boilerplate with some sane defaults for building TypeScript libraries to be consumed by both browsers and Node.js projects.
 
-# Table of Contents
+# Table of Contents <!-- omit in toc -->
 
-- [typescript-library-boilerplate](#typescript-library-boilerplate)
-- [Table of Contents](#table-of-contents)
 - [What's Included](#whats-included)
 - [Setting Up Your Development Environment](#setting-up-your-development-environment)
 - [Setting Up CircleCI](#setting-up-circleci)
@@ -34,6 +32,7 @@ A boilerplate with some sane defaults for building TypeScript libraries to be co
 - [Setting Up GitLab CI](#setting-up-gitlab-ci)
 - [Setting Up Codecov](#setting-up-codecov)
 - [Setting Up SonarQube](#setting-up-sonarqube)
+- [License](#license)
 
 # What's Included
 
@@ -62,7 +61,7 @@ It is recommended that you install the following extensions for your editor:
 - [Prettier](https://prettier.io/)
 - [TSLint](https://palantir.github.io/tslint/)
 
-If you're using VSCode all the recommended extensions are combined in [this extension pack]().
+If you're using VSCode all the recommended extensions are included in [this extension pack]().
 
 # Setting Up CircleCI
 
@@ -74,7 +73,8 @@ If you aren't using SonarQube you'll want to remove `&& ./sonarqube.sh` from the
 If you would like to use SonarQube make sure you setup SonarQube following the instructions below.
 
 If you don't setup or disable SonarQube then CircleCI will fail with the message<br>
-`You're only authorized to execute a local (preview) SonarQube analysis without pushing the results to the SonarQube server.`<br>
+`You're only authorized to execute a local (preview) SonarQube`<br>
+`analysis without pushing the results to the SonarQube server.`<br>
 `Please contact your SonarQube administrator.`
 
 # Setting Up Travis CI
@@ -85,7 +85,14 @@ And that's it! Your project will build next time you push to your repository.
 
 # Setting Up GitLab CI
 
-Just push your code to a GitLab repository with CI enabled. GitLab will do the rest.
+If your code is hosted on GitLab:
+
+- From within your GitLab repository, click on "CI/CD" in the left-hand sidebar and click "Run Pipeline" then "Create Pipeline".
+
+If your code is hosted on GitHub:
+
+- From [https://gitlab.com/](https://gitlab.com/) click "New project" and select "CI/CD for external repo".<br>
+  Click "GitHub" and then click "Connect" next to your project.
 
 # Setting Up Codecov
 
@@ -112,3 +119,7 @@ Copy the token that was generated and add it as an environment variable with the
 If you're not using CircleCI then update your CI run script to call `./sonarqube.sh` after build.
 
 After your next CI run you will see code quality analysis in SonarQube.
+
+# License
+
+MIT
