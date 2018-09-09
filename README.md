@@ -18,7 +18,7 @@
   </a>
 </p>
 
-A boilerplate with some sane defaults for building Node projects with TypeScript.
+A boilerplate with some sane defaults for building Node.js projects with TypeScript.
 This boilerplate is primarily designed for projects that will be published on npm.
 
 > Note: This boilerplate does not come with a REST framework, ORM, etc.
@@ -32,6 +32,7 @@ This project includes tooling for
 - [EditorConfig](https://editorconfig.org/) for consistent coding styles
 - [Prettier](https://prettier.io/) for code formatting
 - [TSLint](https://palantir.github.io/tslint/) for linting per prettier rules
+- [rollup.js](https://rollupjs.org/) for module bundling and tree-shaking
 
 With easy integrations for
 

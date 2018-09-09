@@ -1,7 +1,7 @@
 {
   "name": "node-typescript-boilerplate",
   "version": "0.1.0",
-  "description": "Boilerplate for Node with TypeScript",
+  "description": "Boilerplate for Node.js with TypeScript",
   "main": "dist/index.umd.js",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -11,7 +11,7 @@
   "scripts": {
     "build": "yarn build:compile && yarn build:rollup",
     "build:compile": "tsc",
-    "build:rollup": "rollup dist/index.js --file dist/index.umd.js --format umd --name nodeTypeScriptBoilerplate",
+    "build:rollup": "rollup dist/index.js --file dist/index.umd.js --format umd --name nodeTypeScriptBoilerplate --sourcemap",
     "lint": "tslint --project . 'src/**/*.ts'",
     "start": "ts-node src/index.ts",
     "test": "jest",
