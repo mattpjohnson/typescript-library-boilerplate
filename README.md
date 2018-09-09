@@ -1,7 +1,7 @@
 <h1 align="center">node-typescript-boilerplate</h1>
 
 <p align="center">
-  <a href="https://travis-ci.org/prettier/prettier">
+  <a href="https://travis-ci.org/mattpjohnson/node-typescript-boilerplate">
     <img alt="Travis CI Build Status" src="https://img.shields.io/travis/mattpjohnson/node-typescript-boilerplate/master.svg?style=flat-square&label=Travis+CI">
   </a>
   <a href="https://circleci.com/gh/mattpjohnson/node-typescript-boilerplate">
@@ -13,7 +13,7 @@
   <a href="https://sonarcloud.io/dashboard?id=mattpjohnson_node-typescript-boilerplate">
     <img alt="SonarQube Technical Debt" src="https://img.shields.io/sonar/http/sonarcloud.io/mattpjohnson_node-typescript-boilerplate/tech_debt.svg?style=flat-square">
   </a>
-  <a href="#badge">
+  <a href="https://github.com/prettier/prettier#badge">
     <img alt="code style: prettier" src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square">
   </a>
 </p>
