@@ -7,6 +7,9 @@
   <a href="https://circleci.com/gh/mattpjohnson/typescript-library-boilerplate">
     <img alt="CircleCI Build Status" src="https://img.shields.io/circleci/project/github/mattpjohnson/typescript-library-boilerplate/master.svg?style=flat-square&label=CircleCI">
   </a>
+  <a href="https://gitlab.com/mattpjohnson/typescript-library-boilerplate/pipelines">
+    <img alt="GitLab CI Build Status" src="https://gitlab.com/mattpjohnson/typescript-library-boilerplate/badges/master/build.svg?style=flat-square">
+  </a>
   <a href="https://codecov.io/gh/mattpjohnson/typescript-library-boilerplate">
     <img alt="Codecov Coverage Status" src="https://img.shields.io/codecov/c/github/mattpjohnson/typescript-library-boilerplate.svg?style=flat-square">
   </a>
@@ -82,7 +85,7 @@ And that's it! Your project will build next time you push to your repository.
 
 # Setting Up GitLab CI
 
-Docs needed
+Just push your code to a GitLab repository with CI enabled. GitLab will do the rest.
 
 # Setting Up Codecov
 

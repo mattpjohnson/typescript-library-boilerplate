@@ -16,9 +16,7 @@ install:
 script:
   - yarn test
 
-after_success:
-  - npx codecov
-
-branches:
-  only:
-    - master
+# If you want to run coverage using Travis CI uncomment the following lines
+#  - yarn test:coverage
+# after_success:
+#  - npx codecov
