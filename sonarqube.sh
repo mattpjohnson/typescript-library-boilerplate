@@ -7,10 +7,11 @@ unzip sonar.zip
 
 PATH=$PATH:`pwd`/$sonar_project_dir/bin
 
+rm -r node_modules coverage
+
 sonar-scanner \
   -Dsonar.projectKey=mattpjohnson_node-typescript-boilerplate \
   -Dsonar.organization=mattpjohnson-github \
   -Dsonar.sources=. \
-  -Dsonar.exclusions=coverage,node_modules \
   -Dsonar.host.url=https://sonarcloud.io \
   -Dsonar.login=$SONAR_LOGIN

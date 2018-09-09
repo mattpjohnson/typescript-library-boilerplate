@@ -10,6 +10,9 @@
   <a href="https://codecov.io/gh/mattpjohnson/node-typescript-boilerplate">
     <img alt="Codecov Coverage Status" src="https://img.shields.io/codecov/c/github/mattpjohnson/node-typescript-boilerplate.svg?style=flat-square">
   </a>
+  <a href="https://sonarcloud.io/dashboard?id=mattpjohnson_node-typescript-boilerplate">
+    <img alt="" src="https://sonarcloud.io/api/project_badges/measure?project=mattpjohnson_node-typescript-boilerplate&metric=alert_status">
+  </a>
   <a href="#badge">
     <img alt="code style: prettier" src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square">
   </a>
