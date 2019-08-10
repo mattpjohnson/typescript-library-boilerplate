@@ -4,7 +4,7 @@ stages:
   - setup
   - test
   # If you want to run coverage using GitLab CI uncomment the following line
-  # - codecov
+  # - coverage
 
 setup:
   stage: setup
