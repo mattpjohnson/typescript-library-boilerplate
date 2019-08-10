@@ -3,13 +3,16 @@ image: node:8.11
 stages:
   - setup
   - test
-  # If you want to run coverage using GitLab CI uncomment the following line
-  # - coverage
+  - coverage
+  - build_image
+
+variables:
+  IMAGE_TAG: $CI_REGISTRY_IMAGE:$CI_BUILD_REF_NAME
 
 setup:
   stage: setup
   script:
-    - yarn install
+    - yarn
   artifacts:
     paths:
       - node_modules
@@ -19,9 +22,21 @@ test:
   stage: test
   script:
     - yarn test
-# If you want to run coverage using GitLab CI uncomment the following lines
-#     - yarn test:coverage
-# codecov:
-#   stage: coverage
-#   script:
-#     - npx codecov
+    - yarn test:coverage
+codecov:
+  stage: coverage
+  script:
+    - npx codecov
+
+build_image:
+  stage: build_image
+  image: docker:latest
+  variables:
+    DOCKER_DRIVER: overlay
+  services:
+    - docker:dind
+  script:
+    - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN $CI_REGISTRY
+    - docker build -t $IMAGE_TAG .
+    - docker push $IMAGE_TAG
+
