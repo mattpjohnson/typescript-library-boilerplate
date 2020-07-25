@@ -2,11 +2,15 @@
   "compilerOptions": {
     "declaration": true,
     "outDir": "dist",
-    "module": "esnext",
+    "module": "commonjs",
+    "esModuleInterop": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
     "removeComments": true,
     "preserveConstEnums": true,
-    "sourceMap": true
+    "sourceMap": true,
+    "types": ["jest", "node"],
+    "target": "es5",
+    "lib": ["dom", "es2019"]
   }
 }
